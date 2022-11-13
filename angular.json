@@ -103,9 +103,15 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
-  "defaultProject": "SimonGame"
+  "defaultProject": "SimonGame",
+  "cli": {
+    "analytics": false
+  }
 }
