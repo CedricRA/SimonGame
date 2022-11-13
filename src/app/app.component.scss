@@ -1,0 +1,48 @@
+.title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.div-center {
+    text-align: -webkit-center;
+}
+
+.simon-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 220px;
+    height: 220px;
+}
+
+.simon-btn {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+
+    &.green {
+        background-color: #00FF00;
+        border-top-left-radius: 50px;
+        &.active { background-color: #AAFFAA; }
+    }
+
+    &.red {
+        background-color: #FF0000;
+        border-top-right-radius: 50px;
+        &.active { background-color: #FFAAAA; }
+    }
+    
+    &.yellow {
+        background-color: #FFFF00;
+        border-bottom-left-radius: 50px;
+        &.active { background-color: #FFFFAA; }
+    }
+    
+    &.blue {
+        background-color: #0000FF;
+        border-bottom-right-radius: 50px;
+        &.active { background-color: #AAAAFF; }
+    }
+}
